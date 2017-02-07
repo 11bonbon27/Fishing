@@ -1,12 +1,11 @@
 <html>
 <head>
-  <title>Fishing</title></head>
+<title>Fishing</title></head>
 <body bgcolor="#FFFF99" text="800000">
 <h1> align="center">Fishing Store Order Form</h1>
 <p align="center">We rent all of our fishing equipment by the week.</p>
 <form method="post" name="form" action="javascript:void(0)">
-<table boarder="0" width="39% align="center">
-                                           
+<table border="0" width="39% align="center">
 <tr>
 <td width="48%"><b>Producnt Name</b></td>
 <td width="10%"><b>Price</b></td>
@@ -41,3 +40,19 @@ Select Quantity</option>
 <p align="center">
 <input type="text" name="txtTotal" size="10" value="0.00"></p>
 </form>
+
+<script language="javascript">
+ function calcTotal(){
+   var strRod, strBox, prRod, prBox, strTotal;
+   strRod=document.form.qrod.value;
+   strBox=document.form.qBox.value;
+   prRod=document.form.txtRod.value;
+   prBox=document.form.txtBox.value;
+   
+   strRod=parseint(strRod)* prRod;
+   strBox=parseint(strBox)* prBox;
+   strTotal=(strRod + strBox);
+   doucument.form.txtTotal.value=strTotal;
+ }
+  </script></body></html>
+
