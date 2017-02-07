@@ -45,13 +45,13 @@ Select Quantity</option>
 <script language="javascript">
  function calcTotal(){
    var strRod, strBox, prRod, prBox, strTotal;
-   strRod=document.form.qrod.value;
+   strRod=document.form.qRod.value;
    strBox=document.form.qBox.value;
    prRod=document.form.txtRod.value;
    prBox=document.form.txtBox.value;
    
-   strRod=parseint(strRod)* prRod;
-   strBox=parseint(strBox)* prBox;
+   strRod=parseInt(strRod)*prRod;
+   strBox=parseInt(strBox)*prBox;
    strTotal=(strRod + strBox);
    doucument.form.txtTotal.value=strTotal;
  }
